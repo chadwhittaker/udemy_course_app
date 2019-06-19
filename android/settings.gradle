@@ -1,0 +1,3 @@
+rootProject.name = 'udemy_course_app'
+
+include ':app'
