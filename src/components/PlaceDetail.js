@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Modal, View, Image, Text, Button, TouchableOpacity } from 'react-native';
-import { connect } from 'react-redux'; 
 
 import Icon from 'react-native-vector-icons/Ionicons'
 
@@ -47,10 +46,4 @@ const styles = StyleSheet.create({
   }
 })
 
-const mapStateToProps = state => {
-  return {
-    selectedPlace: state.places.selectedPlace,
-  }
-}
-
-export default connect(mapStateToProps)(PlaceDetail);
+export default PlaceDetail;

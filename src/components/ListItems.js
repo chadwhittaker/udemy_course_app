@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, FlatList, Image } from 'react-native';
-import { connect } from 'react-redux'; 
 
 const ListItems = ({ places, onItemSelected }) => {
 
@@ -33,10 +32,4 @@ const styles = StyleSheet.create({
   }
 });
 
-const mapStateToProps = state => {
-  return {
-    places: state.places.places,
-  }
-}
-
-export default connect(mapStateToProps)(ListItems);
+export default ListItems;
